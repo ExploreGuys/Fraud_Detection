@@ -1,0 +1,89 @@
+Virtual Environment
+venv/
+/venv/
+
+Python cache files
+pycache/
+*.pyc
+*.pyo
+*.pyd
+
+Database file
+*.db
+fraud_detection.db
+
+IDE / Editor specific files
+.vscode/
+.idea/
+
+
+This file tells Git to completely ignore your `venv` folder, Python's temporary cache folders, and your local database file.
+
+### Step 2: Create a New Repository on GitHub
+
+Now, let's create the place on GitHub where your code will live.
+
+1.  Log in to your GitHub account.
+2.  In the top-right corner, click the **+** icon and select **New repository**. 
+3.  **Repository name:** Give it a name, for example, `fraud-detection-system`.
+4.  **Description:** Add a short description (optional).
+5.  **Public/Private:** Choose **Public** so others can see it.
+6.  **IMPORTANT:** **Do NOT** check the box to "Add a README file," "Add .gitignore," or "Choose a license." We are going to add all of these from our local machine.
+7.  Click the **Create repository** button.
+
+GitHub will now show you a page with some commands. We are interested in the URL of your new repository. It will look like this: `https://github.com/your-username/fraud-detection-system.git`. Keep this page open.
+
+### Step 3: Initialize Git Locally and Make Your First Commit
+
+Now we go back to your terminal (Git Bash). Make sure your virtual environment is **deactivated** for these Git commands (just type `deactivate` if it's active). It's a bit cleaner that way.
+
+1.  **Initialize Git:** In your project root folder, run this command. It creates a hidden `.git` folder that will track all your changes.
+    ```bash
+    git init
+    ```
+
+2.  **Add all files to staging:** This command prepares all your project files (except those in `.gitignore`) to be saved.
+    ```bash
+    git add .
+    ```
+
+3.  **Commit your files:** This saves a snapshot of your project. The message explains what you did.
+    ```bash
+    git commit -m "Initial commit: Project setup and all files"
+    ```
+
+### Step 4: Connect to GitHub and Push Your Code
+
+This is the final step where you upload your committed files.
+
+1.  **Rename the default branch to 'main':** This is the modern standard.
+    ```bash
+    git branch -M main
+    ```
+
+2.  **Add the remote repository:** This command tells your local Git where the online GitHub repository is. **Copy the URL from the GitHub page you opened earlier and paste it here.**
+    ```bash
+    git remote add origin https://github.com/your-username/fraud-detection-system.git
+    ```
+
+3.  **Push your code to GitHub:** This uploads your "main" branch to the remote repository named "origin". The `-u` flag sets it as the default for future pushes.
+    ```bash
+    git push -u origin main
+    ```
+
+Git might ask you to log in to your GitHub account. A browser window may pop up for you to authorize.
+
+**That's it!** If you refresh your GitHub repository page, you will see all your files (`app.py`, the `templates` folder, `ml` folder, etc.) are now there.
+
+### How to Update Your Project Later
+
+Now, whenever you make changes to your code locally, you can update your GitHub repository with just three commands:
+
+1.  **Stage your changes:**
+    ```bash
+    git add .
+    ```
+
+2.  **Commit your changes with a new message:**
+    ```bash
+    git commit -m "Added a new feature"

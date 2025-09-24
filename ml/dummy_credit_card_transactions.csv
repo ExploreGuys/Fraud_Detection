@@ -1,0 +1,11 @@
+amount,cardType,merchant,location,device,isFraud
+250.50,Visa,Amazon,USA,Mobile,0
+120.00,Mastercard,Flipkart,India,Desktop,0
+5000.00,Visa,Swiggy,India,Mobile,1
+75.80,Amex,Walmart,USA,Tablet,0
+2300.00,Mastercard,Myntra,India,Mobile,1
+99.99,Visa,Netflix,USA,Desktop,0
+45.00,Mastercard,Zomato,India,Mobile,0
+15000.00,Visa,BestBuy,USA,Desktop,1
+150.25,Amex,Target,USA,Mobile,0
+60.00,Mastercard,Uber,India,Mobile,0

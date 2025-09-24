@@ -1,0 +1,11 @@
+amount,payeeId,payerId,deviceId,isFraud
+1500.50,user123,user456,deviceA,0
+250.00,user789,user101,deviceB,0
+12000.75,user333,user444,deviceC,1
+500.25,user555,user666,deviceD,0
+8500.00,user777,user888,deviceE,1
+950.50,user999,user000,deviceF,0
+300.00,user111,user222,deviceG,0
+40000.00,user121,user343,deviceH,1
+75.00,user565,user787,deviceI,0
+120.00,user909,user121,deviceJ,0
